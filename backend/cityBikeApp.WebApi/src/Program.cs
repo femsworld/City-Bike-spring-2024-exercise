@@ -1,3 +1,5 @@
+using Npgsql;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +14,8 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+var npgsqlBuilder = new NpgsqlDataSourceBuilder(connectionString);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -5,6 +5,14 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cityBikeApp.WebApi", "cityBikeApp.WebApi\cityBikeApp.WebApi.csproj", "{30422B10-D48A-440C-B94C-3072EBF24B13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cityBikeApp.Domain", "cityBikeApp.Domain\cityBikeApp.Domain.csproj", "{84B4A9B6-4D57-4DBE-B98C-7D00CAB4512D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cityBikeApp.Business", "cityBikeApp.Business\cityBikeApp.Business.csproj", "{BFFF7480-A878-4172-B215-222A5ACC0B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cityBikeApp.Controller", "cityBikeApp.Controller\cityBikeApp.Controller.csproj", "{5310263A-5D72-41F0-A2E5-8F4D7700CFBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cityBikeApp.Tests", "cityBikeApp.Tests\cityBikeApp.Tests.csproj", "{7E99051D-5DD6-4E3A-9D6F-61FC75FEBAD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +26,21 @@ Global
 		{30422B10-D48A-440C-B94C-3072EBF24B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30422B10-D48A-440C-B94C-3072EBF24B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30422B10-D48A-440C-B94C-3072EBF24B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B4A9B6-4D57-4DBE-B98C-7D00CAB4512D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B4A9B6-4D57-4DBE-B98C-7D00CAB4512D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B4A9B6-4D57-4DBE-B98C-7D00CAB4512D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B4A9B6-4D57-4DBE-B98C-7D00CAB4512D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFF7480-A878-4172-B215-222A5ACC0B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFF7480-A878-4172-B215-222A5ACC0B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFF7480-A878-4172-B215-222A5ACC0B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFF7480-A878-4172-B215-222A5ACC0B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5310263A-5D72-41F0-A2E5-8F4D7700CFBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5310263A-5D72-41F0-A2E5-8F4D7700CFBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5310263A-5D72-41F0-A2E5-8F4D7700CFBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5310263A-5D72-41F0-A2E5-8F4D7700CFBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E99051D-5DD6-4E3A-9D6F-61FC75FEBAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E99051D-5DD6-4E3A-9D6F-61FC75FEBAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E99051D-5DD6-4E3A-9D6F-61FC75FEBAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E99051D-5DD6-4E3A-9D6F-61FC75FEBAD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "cityBikeApp.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "cityBikeApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/cityBikeApp.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/cityBikeApp.Business.dll": {}
+        }
+      },
+      "cityBikeApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/cityBikeApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/cityBikeApp.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "cityBikeApp.Business/1.0.0": {
+      "type": "project",
+      "path": "../cityBikeApp.Business/cityBikeApp.Business.csproj",
+      "msbuildProject": "../cityBikeApp.Business/cityBikeApp.Business.csproj"
+    },
+    "cityBikeApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../cityBikeApp.Domain/cityBikeApp.Domain.csproj",
+      "msbuildProject": "../cityBikeApp.Domain/cityBikeApp.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "cityBikeApp.Business >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ennie\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ennie\\Desktop\\Solita Assignment\\City-Bike-spring-2024-exercise\\backend\\cityBikeApp.Controller\\cityBikeApp.Controller.csproj",
+      "projectName": "cityBikeApp.Controller",
+      "projectPath": "C:\\Users\\ennie\\Desktop\\Solita Assignment\\City-Bike-spring-2024-exercise\\backend\\cityBikeApp.Controller\\cityBikeApp.Controller.csproj",
+      "packagesPath": "C:\\Users\\ennie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ennie\\Desktop\\Solita Assignment\\City-Bike-spring-2024-exercise\\backend\\cityBikeApp.Controller\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ennie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\ennie\\Desktop\\Solita Assignment\\City-Bike-spring-2024-exercise\\backend\\cityBikeApp.Business\\cityBikeApp.Business.csproj": {
+              "projectPath": "C:\\Users\\ennie\\Desktop\\Solita Assignment\\City-Bike-spring-2024-exercise\\backend\\cityBikeApp.Business\\cityBikeApp.Business.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

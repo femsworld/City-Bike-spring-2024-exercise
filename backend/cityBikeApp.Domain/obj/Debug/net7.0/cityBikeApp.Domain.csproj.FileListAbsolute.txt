@@ -1,0 +1,11 @@
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\bin\Debug\net7.0\cityBikeApp.Domain.deps.json
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\bin\Debug\net7.0\cityBikeApp.Domain.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\bin\Debug\net7.0\cityBikeApp.Domain.pdb
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\obj\Debug\net7.0\cityBikeApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\obj\Debug\net7.0\cityBikeApp.Domain.AssemblyInfoInputs.cache
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\obj\Debug\net7.0\cityBikeApp.Domain.AssemblyInfo.cs
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\obj\Debug\net7.0\cityBikeApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\obj\Debug\net7.0\cityBikeApp.Domain.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\obj\Debug\net7.0\refint\cityBikeApp.Domain.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\obj\Debug\net7.0\cityBikeApp.Domain.pdb
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Domain\obj\Debug\net7.0\ref\cityBikeApp.Domain.dll
