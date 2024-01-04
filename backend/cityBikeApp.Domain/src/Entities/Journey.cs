@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cityBikeApp.Domain.src.Entities
 {
-    public class JourneyTable : BaseEntity
+    public class Journey: BaseEntity
     {
         public DateTime Departure_Date_Time { get; set; }
         public DateTime ReturnDateTime { get; set; }

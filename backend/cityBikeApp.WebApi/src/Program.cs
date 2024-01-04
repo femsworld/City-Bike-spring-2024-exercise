@@ -1,6 +1,25 @@
+using cityBikeApp.Business.src.Services.Abstractions;
+using cityBikeApp.Business.src.Services.Implementations;
+using cityBikeApp.Domain.src.Abstractions;
+using cityBikeApp.WebApi.src.Database;
+using cityBikeApp.WebApi.src.RepoImplementations;
 using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
+builder.Services.AddScoped<DatabaseContext>();
+
+builder.Services
+.AddScoped<IStationRepo, StationRepo>()
+.AddScoped<IStationService, StationService>();
 
 // Add services to the container.
 

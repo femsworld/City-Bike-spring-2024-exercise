@@ -7,14 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "cityBikeApp.Controller/1.0.0": {
+        "dependencies": {
+          "cityBikeApp.Business": "1.0.0"
+        },
         "runtime": {
           "cityBikeApp.Controller.dll": {}
+        }
+      },
+      "cityBikeApp.Business/1.0.0": {
+        "dependencies": {
+          "cityBikeApp.Domain": "1.0.0"
+        },
+        "runtime": {
+          "cityBikeApp.Business.dll": {}
+        }
+      },
+      "cityBikeApp.Domain/1.0.0": {
+        "runtime": {
+          "cityBikeApp.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "cityBikeApp.Controller/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "cityBikeApp.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "cityBikeApp.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

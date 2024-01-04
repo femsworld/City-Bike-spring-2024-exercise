@@ -9,3 +9,7 @@ C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Business\obj\Debug\net7.0\refint\cityBikeApp.Business.dll
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Business\obj\Debug\net7.0\cityBikeApp.Business.pdb
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Business\obj\Debug\net7.0\ref\cityBikeApp.Business.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Business\bin\Debug\net7.0\cityBikeApp.Domain.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Business\bin\Debug\net7.0\cityBikeApp.Domain.pdb
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Business\obj\Debug\net7.0\cityBikeApp.Business.csproj.AssemblyReference.cache
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Business\obj\Debug\net7.0\cityBikeApp.Business.csproj.CopyComplete

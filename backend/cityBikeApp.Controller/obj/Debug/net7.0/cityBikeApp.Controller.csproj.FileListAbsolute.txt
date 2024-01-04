@@ -9,3 +9,9 @@ C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\obj\Debug\net7.0\refint\cityBikeApp.Controller.dll
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\obj\Debug\net7.0\cityBikeApp.Controller.pdb
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\obj\Debug\net7.0\ref\cityBikeApp.Controller.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\bin\Debug\net7.0\cityBikeApp.Business.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\bin\Debug\net7.0\cityBikeApp.Domain.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\bin\Debug\net7.0\cityBikeApp.Business.pdb
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\bin\Debug\net7.0\cityBikeApp.Domain.pdb
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\obj\Debug\net7.0\cityBikeApp.Controller.csproj.AssemblyReference.cache
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.Controller\obj\Debug\net7.0\cityBikeApp.Controller.csproj.CopyComplete
