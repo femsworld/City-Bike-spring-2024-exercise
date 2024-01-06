@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using cityBikeApp.Business.src.Services.Abstractions;
 using cityBikeApp.Domain.src.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +26,17 @@ namespace cityBikeApp.Controller.src.Controllers
             {
                 return StatusCode(500, "Internal Server Error");
             }
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetStationById(int id)
+        {
+            var station = await _stationService.GetOneStationAsync(id);
+            if(station == null)
+            {
+                return NotFound("Staion not found");
+            }
+            return Ok(station);
         }
     }
 }

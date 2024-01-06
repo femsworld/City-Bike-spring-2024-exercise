@@ -24,9 +24,11 @@ namespace cityBikeApp.Business.src.Services.Implementations
         }
 
 
-        public Task<Station> GetOneStationAsync(int id)
+        public async Task<Station> GetOneStationAsync(int id)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
+            var foundStation = await _stationRepo.GetOneStationAsync(id);
+            return foundStation;
         }
     }
 }
