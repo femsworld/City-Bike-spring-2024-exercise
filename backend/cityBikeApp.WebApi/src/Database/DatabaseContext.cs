@@ -9,7 +9,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace cityBikeApp.WebApi.src.Database
 {
-    public class DatabaseContext : DbContext
+    public class DatabaseContext: DbContext
+
     {
         private readonly IConfiguration _config;
         public DbSet<Station> Stations { get; set; }
@@ -19,6 +20,7 @@ namespace cityBikeApp.WebApi.src.Database
         {
             _config = config;
         }
+
         static DatabaseContext()
         {
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
@@ -33,7 +35,7 @@ namespace cityBikeApp.WebApi.src.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Journey>()
+             modelBuilder.Entity<Journey>()
             .HasOne(j => j.DepartureStation)
             .WithMany()
             .HasForeignKey(j => j.DepartureStationId)

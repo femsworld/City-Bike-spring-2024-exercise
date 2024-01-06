@@ -3,6 +3,7 @@ using cityBikeApp.Business.src.Services.Implementations;
 using cityBikeApp.Domain.src.Abstractions;
 using cityBikeApp.WebApi.src.Database;
 using cityBikeApp.WebApi.src.RepoImplementations;
+using Microsoft.EntityFrameworkCore;
 using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +16,12 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddScoped<DatabaseContext>();
+// builder.Services.AddScoped<DatabaseContext>();
+
+builder.Services.AddDbContext<DatabaseContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 builder.Services
 .AddScoped<IStationRepo, StationRepo>()
@@ -27,8 +33,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-
 
 var app = builder.Build();
 
