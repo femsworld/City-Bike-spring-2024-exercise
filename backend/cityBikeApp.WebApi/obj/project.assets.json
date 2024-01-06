@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "EFCore.NamingConventions/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "[7.0.0, 8.0.0)",
+          "Microsoft.EntityFrameworkCore.Relational": "[7.0.0, 8.0.0)",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/EFCore.NamingConventions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/EFCore.NamingConventions.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -550,6 +564,18 @@
     }
   },
   "libraries": {
+    "EFCore.NamingConventions/7.0.0": {
+      "sha512": "KQ91sLseyFIkt0zd/XjGYPRDwvvUIBpjMLEHeE1wdoqvNa8q0WsaAo4vkmQFvsRML4KHkr7rko0yFAqICIx5Qw==",
+      "type": "package",
+      "path": "efcore.namingconventions/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "efcore.namingconventions.7.0.0.nupkg.sha512",
+        "efcore.namingconventions.nuspec",
+        "lib/net6.0/EFCore.NamingConventions.dll"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1533,6 +1559,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "EFCore.NamingConventions >= 7.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.10",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
@@ -1584,6 +1611,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "EFCore.NamingConventions": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.10, )"

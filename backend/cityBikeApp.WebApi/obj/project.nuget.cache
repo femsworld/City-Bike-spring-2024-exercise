@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i1xjfkn2OmAdRiRZKVO7kkXK6SNjdrdVMtfiIRnwcld47G3LX3eAQ3EqhabrQ+/yvowPtTd7T6L7ZA1Ag4CLTw==",
+  "dgSpecHash": "jA73cWpzN8BoU0q98HL2MjsMB+nNPPPhw/Ze4WP8rxdFDwOj0HxCDGzO9VzbqYeTuU6dIkFbLGC2PbwUNn5TUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ennie\\Desktop\\Solita Assignment\\City-Bike-spring-2024-exercise\\backend\\cityBikeApp.WebApi\\cityBikeApp.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ennie\\.nuget\\packages\\efcore.namingconventions\\7.0.0\\efcore.namingconventions.7.0.0.nupkg.sha512",
     "C:\\Users\\ennie\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ennie\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\ennie\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",

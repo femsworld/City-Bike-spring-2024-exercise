@@ -16,7 +16,7 @@ namespace cityBikeApp.WebApi.src.RepoImplementations
 
         public StationRepo(DatabaseContext context)
         {
-            _stations = context.Stations;
+            _stations = context.Station;
             _context = context;
         }
         public async Task<List<Station>> GetAllStationAsync()

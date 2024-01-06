@@ -18,9 +18,22 @@ builder.Services.AddCors(options =>
 
 // builder.Services.AddScoped<DatabaseContext>();
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+var npgsqlBuilder = new NpgsqlDataSourceBuilder(connectionString);
+
+var dataSource = npgsqlBuilder.Build();
+
+// builder.Services.AddDbContext<DatabaseContext>(options =>
+// {
+//     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+// });
+
+
 builder.Services.AddDbContext<DatabaseContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseNpgsql(dataSource)
+           .UseSnakeCaseNamingConvention();
 });
 
 builder.Services
@@ -36,9 +49,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+// var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-var npgsqlBuilder = new NpgsqlDataSourceBuilder(connectionString);
+// var npgsqlBuilder = new NpgsqlDataSourceBuilder(connectionString);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

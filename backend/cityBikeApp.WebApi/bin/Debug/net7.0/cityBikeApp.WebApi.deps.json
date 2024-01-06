@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "cityBikeApp.WebApi/1.0.0": {
         "dependencies": {
+          "EFCore.NamingConventions": "7.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
@@ -17,6 +18,19 @@
         },
         "runtime": {
           "cityBikeApp.WebApi.dll": {}
+        }
+      },
+      "EFCore.NamingConventions/7.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/EFCore.NamingConventions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -268,6 +282,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EFCore.NamingConventions/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KQ91sLseyFIkt0zd/XjGYPRDwvvUIBpjMLEHeE1wdoqvNa8q0WsaAo4vkmQFvsRML4KHkr7rko0yFAqICIx5Qw==",
+      "path": "efcore.namingconventions/7.0.0",
+      "hashPath": "efcore.namingconventions.7.0.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

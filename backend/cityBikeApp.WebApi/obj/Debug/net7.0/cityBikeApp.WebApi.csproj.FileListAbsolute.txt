@@ -47,3 +47,4 @@ C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.WebApi\obj\Debug\net7.0\cityBikeApp.WebApi.pdb
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.WebApi\obj\Debug\net7.0\cityBikeApp.WebApi.genruntimeconfig.cache
 C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.WebApi\obj\Debug\net7.0\ref\cityBikeApp.WebApi.dll
+C:\Users\ennie\Desktop\Solita Assignment\City-Bike-spring-2024-exercise\backend\cityBikeApp.WebApi\bin\Debug\net7.0\EFCore.NamingConventions.dll

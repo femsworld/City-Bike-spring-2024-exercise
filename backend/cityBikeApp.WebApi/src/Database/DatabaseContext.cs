@@ -13,7 +13,7 @@ namespace cityBikeApp.WebApi.src.Database
 
     {
         private readonly IConfiguration _config;
-        public DbSet<Station> Stations { get; set; }
+        public DbSet<Station> Station { get; set; }
         public DbSet<Journey> Journeys { get; set; }
 
         public DatabaseContext (DbContextOptions options, IConfiguration config) : base (options)
@@ -35,7 +35,8 @@ namespace cityBikeApp.WebApi.src.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // base.OnModelCreating(modelBuilder);
-             modelBuilder.Entity<Journey>()
+            modelBuilder.Entity<Station>().ToTable("station");
+            modelBuilder.Entity<Journey>()
             .HasOne(j => j.DepartureStation)
             .WithMany()
             .HasForeignKey(j => j.DepartureStationId)
