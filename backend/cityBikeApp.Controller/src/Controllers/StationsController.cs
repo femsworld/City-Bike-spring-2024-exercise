@@ -6,14 +6,14 @@ using cityBikeApp.Business.src.Services.Abstractions;
 using cityBikeApp.Domain.src.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace cityBikeApp.WebApi.src.Controllers
+namespace cityBikeApp.Controller.src.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
-    public class TestConString : ControllerBase
+    [Route("api/v1/[controller]")]
+    public class StationsController : ControllerBase
     {
-        private IStationService _stationService;
-        public TestConString(IStationService stationService)
+        private readonly IStationService _stationService;
+        public StationsController(IStationService stationService)
         {
             _stationService = stationService;
         }
