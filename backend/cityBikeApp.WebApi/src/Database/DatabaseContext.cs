@@ -8,7 +8,7 @@ namespace cityBikeApp.WebApi.src.Database
     {
         private readonly IConfiguration _config;
         public DbSet<Station> Station { get; set; }
-        public DbSet<Journey> Journeys { get; set; }
+        public DbSet<Journey> Journey { get; set; }
 
         public DatabaseContext (DbContextOptions options, IConfiguration config) : base (options)
         {

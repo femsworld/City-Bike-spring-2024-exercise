@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using cityBikeApp.Domain.src.Abstractions;
 using cityBikeApp.Domain.src.Entities;
 using cityBikeApp.WebApi.src.Database;
@@ -34,25 +30,25 @@ namespace cityBikeApp.WebApi.src.RepoImplementations
         public async Task<int> GetTotalJourneysStartingFromStationAsync(int stationId)
         {
             // throw new NotImplementedException();
-            return await _context.Journeys.CountAsync(j => j.DepartureStationId == stationId);
+            return await _context.Journey.CountAsync(j => j.DepartureStationId == stationId);
         }
 
         public async Task<int> GetTotalJourneysEndingAtStationAsync(int stationId)
         {
             // throw new NotImplementedException();
-            return await _context.Journeys.CountAsync(j => j.ReturnStationId == stationId);
+            return await _context.Journey.CountAsync(j => j.ReturnStationId == stationId);
         }
 
         public async Task<double> GetAverageDistanceOfJourneysStartingFromStationAsync(int stationId)
         {
             // throw new NotImplementedException();
-            return await _context.Journeys.Where(j => j.DepartureStationId == stationId).AverageAsync(j => j.Distance);
+            return await _context.Journey.Where(j => j.DepartureStationId == stationId).AverageAsync(j => j.Distance);
         }
 
         public async Task<double> GetAverageDurationOfJourneysStartingFromStationAsync(int stationId)
         {
             // throw new NotImplementedException();
-            return await _context.Journeys.Where(j => j.DepartureStationId == stationId).AverageAsync(j =>j.Duration);
+            return await _context.Journey.Where(j => j.DepartureStationId == stationId).AverageAsync(j =>j.Duration);
         }
     }
 }
