@@ -7,6 +7,7 @@ services:
       POSTGRES_USER: academy
       POSTGRES_PASSWORD: academy
       POSTGRES_DB: citybike
+      POSTGRES_HOST_AUTH_METHOD: trust
     build:
       context: .
       dockerfile: Dockerfile
