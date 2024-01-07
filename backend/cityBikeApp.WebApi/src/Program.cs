@@ -16,19 +16,10 @@ builder.Services.AddCors(options =>
     });
 });
 
-// builder.Services.AddScoped<DatabaseContext>();
-
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-var npgsqlBuilder = new NpgsqlDataSourceBuilder(connectionString);
-
-var dataSource = npgsqlBuilder.Build();
-
-// builder.Services.AddDbContext<DatabaseContext>(options =>
-// {
-//     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
-// });
-
+var npgsqlBuilder = new NpgsqlConnectionStringBuilder(connectionString);
+var dataSource = npgsqlBuilder.ConnectionString;
 
 builder.Services.AddDbContext<DatabaseContext>(options =>
 {
@@ -37,23 +28,15 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
 });
 
 builder.Services
-.AddScoped<IStationRepo, StationRepo>()
-.AddScoped<IStationService, StationService>();
-
-// Add services to the container.
+    .AddScoped<IStationRepo, StationRepo>()
+    .AddScoped<IStationService, StationService>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-// var npgsqlBuilder = new NpgsqlDataSourceBuilder(connectionString);
-
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -61,12 +44,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
 
-dataSource.Dispose();
 
