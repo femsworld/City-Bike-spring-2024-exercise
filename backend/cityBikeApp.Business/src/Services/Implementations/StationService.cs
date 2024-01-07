@@ -19,12 +19,35 @@ namespace cityBikeApp.Business.src.Services.Implementations
             return stations;
         }
 
+        public async Task<double> GetAverageDistanceOfJourneysStartingFromStationAsync(int stationId)
+        {
+            // throw new NotImplementedException();
+            return await _stationRepo.GetAverageDistanceOfJourneysStartingFromStationAsync(stationId);
+        }
+
+        public async Task<double> GetAverageDurationOfJourneysStartingFromStationAsync(int stationId)
+        {
+            // throw new NotImplementedException();
+            return await _stationRepo.GetAverageDurationOfJourneysStartingFromStationAsync(stationId);
+        }
 
         public async Task<Station> GetOneStationAsync(int id)
         {
             // throw new NotImplementedException();
             var foundStation = await _stationRepo.GetOneStationAsync(id);
             return foundStation;
+        }
+
+        public async Task<int> GetTotalJourneysEndingAtStationAsync(int stationId)
+        {
+            // throw new NotImplementedException();
+            return await _stationRepo.GetTotalJourneysEndingAtStationAsync(stationId);
+        }
+
+        public async Task<int> GetTotalJourneysStartingFromStationAsync(int stationId)
+        {
+            // throw new NotImplementedException();
+            return await _stationRepo.GetTotalJourneysStartingFromStationAsync(stationId);
         }
     }
 }

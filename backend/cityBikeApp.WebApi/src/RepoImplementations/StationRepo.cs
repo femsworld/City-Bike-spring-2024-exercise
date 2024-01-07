@@ -30,5 +30,29 @@ namespace cityBikeApp.WebApi.src.RepoImplementations
             // throw new NotImplementedException();
             return await _stations.FindAsync(id);
         }
+
+        public async Task<int> GetTotalJourneysStartingFromStationAsync(int stationId)
+        {
+            // throw new NotImplementedException();
+            return await _context.Journeys.CountAsync(j => j.DepartureStationId == stationId);
+        }
+
+        public async Task<int> GetTotalJourneysEndingAtStationAsync(int stationId)
+        {
+            // throw new NotImplementedException();
+            return await _context.Journeys.CountAsync(j => j.ReturnStationId == stationId);
+        }
+
+        public async Task<double> GetAverageDistanceOfJourneysStartingFromStationAsync(int stationId)
+        {
+            // throw new NotImplementedException();
+            return await _context.Journeys.Where(j => j.DepartureStationId == stationId).AverageAsync(j => j.Distance);
+        }
+
+        public async Task<double> GetAverageDurationOfJourneysStartingFromStationAsync(int stationId)
+        {
+            // throw new NotImplementedException();
+            return await _context.Journeys.Where(j => j.DepartureStationId == stationId).AverageAsync(j =>j.Duration);
+        }
     }
 }

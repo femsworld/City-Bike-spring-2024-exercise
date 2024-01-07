@@ -52,6 +52,18 @@ namespace cityBikeApp.Controller.src.Controllers
             }
         }
 
+        // [HttpGet("{id:int}")]
+        // public async Task<IActionResult> GetStationById(int id)
+        // {
+        //     var station = await _stationService.GetOneStationAsync(id);
+        //     if (station == null)
+        //     {
+        //         return NotFound("Staion not found");
+        //     }
+        //     return Ok(station);
+        // }
+
+
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetStationById(int id)
         {
@@ -60,8 +72,24 @@ namespace cityBikeApp.Controller.src.Controllers
             {
                 return NotFound("Staion not found");
             }
-            return Ok(station);
+
+            var totalJourneysStartingFromStation = await _stationService.GetTotalJourneysStartingFromStationAsync(id);
+            var totalJourneysEndingAtStation = await _stationService.GetTotalJourneysEndingAtStationAsync(id);
+            var averageDistanceOfJourneysStartingFromStation = await _stationService.GetAverageDistanceOfJourneysStartingFromStationAsync(id);
+            var averageDurationOfJourneysStartingFromStation = await _stationService.GetAverageDurationOfJourneysStartingFromStationAsync(id);
+
+            var result = new
+            {
+                station,
+                totalJourneysStartingFromStation,
+                totalJourneysEndingAtStation,
+                averageDistanceOfJourneysStartingFromStation,
+                averageDurationOfJourneysStartingFromStation
+            };
+
+            return Ok(result);
         }
+
 
         public class GetAllStaionResponse
         {

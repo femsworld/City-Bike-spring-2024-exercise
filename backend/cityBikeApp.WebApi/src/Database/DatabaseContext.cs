@@ -30,6 +30,7 @@ namespace cityBikeApp.WebApi.src.Database
         {
             // base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Station>().ToTable("station");
+            modelBuilder.Entity<Journey>().ToTable("journey");
             modelBuilder.Entity<Journey>()
             .HasOne(j => j.DepartureStation)
             .WithMany()
