@@ -14,7 +14,7 @@ namespace cityBikeApp.Domain.src.Entities
         [ForeignKey("ReturnStation")]
         public int ReturnStationId { get; set; }
         public Station? ReturnStation { get; set; }
-        public int Distance { get; set; }
+        public int? Distance { get; set; }
         public int Duration { get; set; }
     }
 }

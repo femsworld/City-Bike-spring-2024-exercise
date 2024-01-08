@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using cityBikeApp.Business.src.Services.Abstractions;
 using cityBikeApp.Domain.src.Abstractions;
 using cityBikeApp.Domain.src.Entities;
@@ -23,10 +19,10 @@ namespace cityBikeApp.Business.src.Services.Implementations
             return journeys;
         }
 
-        public async Task<Journey> GetOneJourney(int id)
+        public async Task<Journey> GetOneJourneyAsync(int id)
         {
             // throw new NotImplementedException();
-            var foundJourney = await _journeyRepo.GetOneJourney(id);
+            var foundJourney = await _journeyRepo.GetOneJourneyAsync(id);
             return foundJourney;
         }
     }

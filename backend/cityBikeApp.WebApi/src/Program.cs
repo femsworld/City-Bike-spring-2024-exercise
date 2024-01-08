@@ -29,7 +29,9 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
 
 builder.Services
     .AddScoped<IStationRepo, StationRepo>()
-    .AddScoped<IStationService, StationService>();
+    .AddScoped<IJourneyRepo, JourneyRepo>()
+    .AddScoped<IStationService, StationService>()
+    .AddScoped<IJourneyService, JourneyService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

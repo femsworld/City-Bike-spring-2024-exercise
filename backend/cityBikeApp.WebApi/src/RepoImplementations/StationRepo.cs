@@ -42,13 +42,21 @@ namespace cityBikeApp.WebApi.src.RepoImplementations
         public async Task<double> GetAverageDistanceOfJourneysStartingFromStationAsync(int stationId)
         {
             // throw new NotImplementedException();
-            return await _context.Journey.Where(j => j.DepartureStationId == stationId).AverageAsync(j => j.Distance);
+            // return await _context.Journey.Where(j => j.DepartureStationId == stationId).AverageAsync(j => j.Distance);
+            var averageDistance = await _context.Journey
+                .Where(j => j.DepartureStationId == stationId && j.Distance != null)
+                .AverageAsync(j => (double?)j.Distance ?? 0); // Handle null values by providing a default value (0 in this case)
+
+            return averageDistance;
         }
 
         public async Task<double> GetAverageDurationOfJourneysStartingFromStationAsync(int stationId)
         {
             // throw new NotImplementedException();
-            return await _context.Journey.Where(j => j.DepartureStationId == stationId).AverageAsync(j =>j.Duration);
+            // return await _context.Journey.Where(j => j.DepartureStationId == stationId).AverageAsync(j =>j.Duration);
+            return await _context.Journey
+        .Where(j => j.DepartureStationId == stationId)
+        .AverageAsync(j => (double?)j.Duration) ?? 0;
         }
     }
 }

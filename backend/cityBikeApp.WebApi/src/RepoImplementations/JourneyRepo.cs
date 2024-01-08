@@ -12,7 +12,8 @@ namespace cityBikeApp.WebApi.src.RepoImplementations
 
         public JourneyRepo(DatabaseContext context)
         {
-            _journeys = _context.Journey;
+            _journeys = context.Journey;
+            _context = context;
         }
         public async Task<List<Journey>> GetAllJourneyAsync()
         {
@@ -20,10 +21,15 @@ namespace cityBikeApp.WebApi.src.RepoImplementations
             return await _journeys.ToListAsync();
         }
 
-        public async Task<Journey> GetOneJourney(int id)
+        // public async Task<Journey> GetOneJourney(int id)
+        // {
+        //     // throw new NotImplementedException();
+        //     return await _context.Journey.FindAsync(id);
+        // }
+
+        public async Task<Journey> GetOneJourneyAsync(int id)
         {
-            // throw new NotImplementedException();
-            return await _context.Journey.FindAsync(id);
+             return await _context.Journey.FindAsync(id);
         }
     }
 }

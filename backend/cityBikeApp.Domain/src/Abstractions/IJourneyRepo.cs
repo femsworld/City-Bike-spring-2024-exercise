@@ -5,6 +5,6 @@ namespace cityBikeApp.Domain.src.Abstractions
     public interface IJourneyRepo
     {
          Task<List<Journey>> GetAllJourneyAsync();
-        Task<Journey> GetOneJourney(int id);
+        Task<Journey> GetOneJourneyAsync(int id);
     }
 }
